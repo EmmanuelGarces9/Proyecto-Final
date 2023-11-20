@@ -2,23 +2,16 @@
 
 game::game()
 {
-    timer = new QTimer;
-    for(auto& ptr : buildings) {
-        ptr = new Edificio;
-    }
-
-
-    connect(timer, SIGNAL(timeout()), this, SLOT(call_buildings()));
-    timer->start(gameValues::buildingSpawnRate);
+    buildings=new Edificio;
+    backgroundgame= new background;
+    set_background(backgroundgame);
+    set_building(buildings);
 }
 
 game::~game()
 {
-    delete timer;
-    for(auto& ptr : buildings) {
-        delete ptr;
-        ptr = nullptr;
-    }
+    delete backgroundgame;
+    delete buildings;
 }
 
 void game::set_building(Edificio *edificios)
@@ -27,13 +20,10 @@ void game::set_building(Edificio *edificios)
     addItem(edificios);
 }
 
-void game::call_buildings()
+
+void game::set_background(background *background_game)
 {
-    if(i + 1 == buildings.size()) {
-        timer->stop();
-    }
-    set_building(buildings[i]);
-    i++;
+    addItem(background_game);
 }
 
 

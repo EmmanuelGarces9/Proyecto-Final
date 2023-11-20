@@ -67,9 +67,8 @@ void Edificio::setMov_on(bool newMov_on)
 
 void Edificio::randomY()
 {
-        y=rand() % (edificiovalores::yDownMaxRange*10 + 1);
-        y=720-y-edificiovalores::yDownMinRange*10;
-
+    y=rand() % (edificiovalores::yDownMaxRange*10 + 1);
+    y=600-y-edificiovalores::yDownMinRange*10;
 }
 
 void Edificio::movement()

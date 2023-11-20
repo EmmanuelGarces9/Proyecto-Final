@@ -2,5 +2,8 @@
     <qresource prefix="/">
         <file>sprites/edificio.png</file>
         <file>sprites/fondo.png</file>
+        <file>Imagenes/Dragon_protagonista/01.png</file>
+        <file>Imagenes/Dragon_protagonista/02.png</file>
+        <file>Imagenes/Dragon_protagonista/03.png</file>
     </qresource>
 </RCC>

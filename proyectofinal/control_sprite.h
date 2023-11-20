@@ -12,8 +12,8 @@ public:
     ~control_sprite();
 
     void Select_sprite(int x, int y);
-    void Scale_sprite(float scale);
-    void Scale_sprite(float scale_x, float scale_y);
+    void Scale_sprite(double scale);
+    void Scale_sprite(double scale_x, double scale_y);
     void Show_Sprite(bool appear);
 
     //Set and Get Methods

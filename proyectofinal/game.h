@@ -2,9 +2,10 @@
 #define GAME_H
 #include "edificio.h"
 #include <QGraphicsScene>
+#include "background.h"
 
 namespace gameValues {
-    const int buildingSpawnRate = 1000;
+
 }
 
 class game : public QGraphicsScene
@@ -15,15 +16,11 @@ public:
     ~game();
 
 private:
-    int i;
-    QTimer* timer;
-    std::array<Edificio*, 6>buildings;
+    Edificio* buildings;
+    background *backgroundgame;
 
     void set_building(Edificio *edificios);
-
-private slots:
-    void call_buildings();
-
+    void set_background(background *background_game);
 };
 
 #endif // GAME_H

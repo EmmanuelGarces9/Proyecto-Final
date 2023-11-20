@@ -27,12 +27,12 @@ void control_sprite::Select_sprite(int x, int y)
     *actual = full->copy((*width_sprite)*x, (*height_sprite)*y, (*width_sprite), (*height_sprite));
 }
 
-void control_sprite::Scale_sprite(float scale)
+void control_sprite::Scale_sprite(double scale)
 {
     *actual = actual->scaled(actual->width()*scale, actual->height()*scale);
 }
 
-void control_sprite::Scale_sprite(float scale_x, float scale_y)
+void control_sprite::Scale_sprite(double scale_x, double scale_y)
 {
     *actual = actual->scaled(actual->width()*scale_x, actual->height()*scale_y);
 }
