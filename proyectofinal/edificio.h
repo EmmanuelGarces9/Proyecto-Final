@@ -8,13 +8,11 @@
 namespace edificiovalores{
     const int width=147;
     const int height=530;
-    const int speed=15;
+    const int speed=12;
     const int limitx=-150;
-    const int yUpMaxRange=57;
     const int yDownMaxRange=45;
-    const int yUpMinRange=3;
     const int yDownMinRange=7;
-    const int xStart=1300;
+    const int xStart=1100;
     const int frequency=50;
 
 }

@@ -1,0 +1,11 @@
+release/background.o
+release/control_sprite.o
+release/edificio.o
+release/game.o
+release/main.o
+release/mainwindow.o
+release/qrc_resources.o
+release/moc_background.o
+release/moc_edificio.o
+release/moc_game.o
+release/moc_mainwindow.o
