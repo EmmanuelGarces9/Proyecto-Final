@@ -5,10 +5,11 @@
 Edificio::Edificio()
 {
     timer=new QTimer;
+
     QPixmap imagen("://sprites/edificio.png");
     *full=imagen.copy();
-    mov_on=true;
 
+    mov_on=true;
     Set_Width_Sprite(edificiovalores::width);
     Set_Height_Sprite(edificiovalores::height);
 
@@ -16,18 +17,15 @@ Edificio::Edificio()
     int random=rand() % 3;
 
     Select_sprite(random, 0);
-
     Scale_sprite(1);
-
     Show_Sprite(true);
-
 
     x=edificiovalores::xStart;
     randomY();
     setPos(x, y);
 
     connect(timer, SIGNAL(timeout()), this, SLOT(movement()));
-    timer->start(edificiovalores::frequency);
+     //timer->start(edificiovalores::frequency);
 }
 
 Edificio::~Edificio()
@@ -50,6 +48,11 @@ void Edificio::start_mov()
 void Edificio::stop_mov()
 {
     timer->stop();
+}
+
+void Edificio::start_timer()
+{
+    timer->start(edificiovalores::frequency);
 }
 
 bool Edificio::getMov_on() const

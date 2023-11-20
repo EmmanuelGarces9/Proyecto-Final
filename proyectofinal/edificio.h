@@ -28,7 +28,7 @@ public:
     ~Edificio();
     void start_mov();
     void stop_mov();
-
+    void start_timer();
 
     bool getMov_on() const;
     void setMov_on(bool newMov_on);
