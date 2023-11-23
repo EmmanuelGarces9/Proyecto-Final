@@ -3,7 +3,7 @@
 personaje::personaje()
 {
     move1.load(":/Imagenes/Dragon_protagonista/01.png");
-    move2.load("/Imagenes/Dragon_protagonista/02.png");
+    move2.load(":/Imagenes/Dragon_protagonista/02.png");
     move3.load(":/Imagenes/Dragon_protagonista/03.png");
 }
 

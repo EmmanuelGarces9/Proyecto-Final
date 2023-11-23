@@ -4,7 +4,6 @@
 #include <QObject>
 #include <QGraphicsPixmapItem>
 #include <QPixmap>
-#include <QTimer>
 
 class personaje: public QObject, public QGraphicsPixmapItem
 {
