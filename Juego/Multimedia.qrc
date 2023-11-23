@@ -9,5 +9,7 @@
         <file>Imagenes/Bola de fuego/03.png</file>
         <file>Imagenes/Bola de fuego/04.png</file>
         <file>Imagenes/Bola de fuego/05.png</file>
+        <file>sprites/edificio.png</file>
+        <file>sprites/fondo.png</file>
     </qresource>
 </RCC>
