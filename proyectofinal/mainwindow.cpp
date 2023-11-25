@@ -22,10 +22,10 @@ MainWindow::~MainWindow()
 
 void MainWindow::startgame()
 {
+    ui->graphicsView->setGeometry(0, 0, width(), height());
     juego->setSceneRect(0, 0,
-        ui->graphicsView->width() - 2,
-        ui->graphicsView->height() - 2);
+                        ui->graphicsView->width() - 2,
+                        ui->graphicsView->height() - 2);
+
     ui->graphicsView->setScene(juego);
-
 }
-

@@ -12,16 +12,20 @@ SOURCES += \
     background.cpp \
     control_sprite.cpp \
     edificio.cpp \
+    fireball.cpp \
     game.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    personaje.cpp
 
 HEADERS += \
     background.h \
     control_sprite.h \
     edificio.h \
+    fireball.h \
     game.h \
-    mainwindow.h
+    mainwindow.h \
+    personaje.h
 
 FORMS += \
     mainwindow.ui

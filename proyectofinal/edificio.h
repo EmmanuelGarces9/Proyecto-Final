@@ -8,7 +8,7 @@
 namespace edificiovalores{
     const int width=147;
     const int height=530;
-    const int speed=12;
+    const int speed=20;
     const int limitx=-150;
     const int yDownMaxRange=45;
     const int yDownMinRange=7;
