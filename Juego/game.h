@@ -24,6 +24,7 @@ private:
     personaje *prota;
     fireball *ball;
     weed *maria;
+    QTimer *timerCollisions;
 
     void set_building(Edificio *edificios);
     void set_background(background *background_game);
@@ -31,6 +32,8 @@ private:
     void set_fireball(fireball *ball);
     void set_weed(weed* maria);
     void keyPressEvent(QKeyEvent *i);
+public slots:
+    void checkColision();
 };
 
 #endif // GAME_H

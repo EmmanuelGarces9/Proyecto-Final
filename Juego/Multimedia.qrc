@@ -11,5 +11,6 @@
         <file>Imagenes/Bola de fuego/05.png</file>
         <file>sprites/edificio.png</file>
         <file>sprites/fondo.png</file>
+        <file>sprites/weed.png</file>
     </qresource>
 </RCC>

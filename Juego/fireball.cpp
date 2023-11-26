@@ -40,28 +40,21 @@ void fireball::set_imagen()
         img = ball6;
     }
 
-    if (!img.isNull()) {
-        setPixmap(img.scaled(50, 50));
-    } else {
-        qDebug() << "Image is null!";
-    }
+    setPixmap(img.scaled(80, 80));
 }
 
 void fireball::mov_fireball()
 {
-    //y0 = rand() % 481 + 50;  // Rango de y
-
-    double theta = 45;
-
-    double V0x= v0 * cos(theta * (M_PI/180));
-    double V0y= v0 * sin(theta * (M_PI/180));
-
     // Calcular las posiciones x e y usando las ecuaciones de movimiento
     double x = x0 - (t * V0x);
     double y = y0 - (V0y * t - 0.5 * g * t * t);
 
-    if(y<550) setPos(x,y);// Establecer la posición en la escena
-    else time_mov_fireball->stop();
+    if(y<600) setPos(x,y);// Establecer la posición en la escena
+    else{
+        y0 = rand() % 501 + 50;
+        t=0;
+    }
+
 
     // Actualizar el tiempo transcurrido
 

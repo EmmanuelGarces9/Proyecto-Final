@@ -15,6 +15,15 @@ game::game()
     set_protagonista(prota);
     set_fireball(ball);
     set_weed(maria);
+
+    timerCollisions = new QTimer;
+
+    connect(timerCollisions,SIGNAL(timeout()),this,SLOT(checkColision()));
+
+    timerCollisions->start(10);
+
+
+
 }
 
 game::~game()
@@ -58,8 +67,19 @@ void game::keyPressEvent(QKeyEvent *i)
 {
     int y=prota->y();
     if(i->key()==Qt::Key_S && y<480){
-        prota->setY(prota->y()+5);
+        prota->setY(prota->y()+15);
     }else if(i->key()==Qt::Key_W && y>0){
-        prota->setY(prota->y()-5);
+        prota->setY(prota->y()-15);
     }
+}
+void game::checkColision()
+{
+    if (prota->collidesWithItem(buildings))
+    {
+        qDebug() << "Colision con edificio!";
+    }else if(prota->collidesWithItem(ball)){
+        qDebug() << "Colision con bola de fuego!";
+    }
+
+    if(prota->collidesWithItem(maria)) qDebug() << "Colision con hoja!";
 }

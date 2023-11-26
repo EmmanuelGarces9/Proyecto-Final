@@ -6,8 +6,12 @@ release/game.o
 release/main.o
 release/mainwindow.o
 release/personaje.o
+release/weed.o
 release/qrc_Multimedia.o
 release/moc_background.o
 release/moc_edificio.o
+release/moc_fireball.o
 release/moc_game.o
 release/moc_mainwindow.o
+release/moc_personaje.o
+release/moc_weed.o
