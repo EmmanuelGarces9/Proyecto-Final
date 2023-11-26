@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sprites/edificio.png</file>
+        <file>sprites/fondo.png</file>
+        <file>Imagenes/Dragon_protagonista/01.png</file>
+        <file>Imagenes/Dragon_protagonista/02.png</file>
+        <file>Imagenes/Dragon_protagonista/03.png</file>
+        <file>Imagenes/Bola de fuego/00.png</file>
+        <file>Imagenes/Bola de fuego/01.png</file>
+        <file>Imagenes/Bola de fuego/02.png</file>
+        <file>Imagenes/Bola de fuego/03.png</file>
+        <file>Imagenes/Bola de fuego/04.png</file>
+        <file>sprites/weed.png</file>
+    </qresource>
+</RCC>

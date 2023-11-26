@@ -26,6 +26,6 @@ void MainWindow::startgame()
     juego->setSceneRect(0, 0,
                         ui->graphicsView->width() - 2,
                         ui->graphicsView->height() - 2);
+
     ui->graphicsView->setScene(juego);
 }
-

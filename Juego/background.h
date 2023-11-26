@@ -20,15 +20,19 @@ class background : public control_sprite
 public:
     background();
     ~background();
+
     void start_moving();
     void stop_moving();
+
     bool getMoving() const;
     void setMoving(bool newMoving);
 
 private:
     int x;
     int y;
+
     bool moving;
+
     QTimer *timer;
 
 private slots:

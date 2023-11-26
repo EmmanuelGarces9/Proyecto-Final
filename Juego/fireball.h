@@ -1,3 +1,4 @@
+
 #ifndef FIREBALL_H
 #define FIREBALL_H
 
@@ -8,6 +9,7 @@
 
 class fireball: public QObject, public QGraphicsPixmapItem
 {
+    Q_OBJECT
 public:
     fireball();
     void start_timers();
@@ -24,3 +26,4 @@ private slots:
 };
 
 #endif // FIREBALL_H
+

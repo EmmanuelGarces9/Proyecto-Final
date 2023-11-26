@@ -1,3 +1,4 @@
+
 #ifndef PERSONAJE_H
 #define PERSONAJE_H
 
@@ -8,6 +9,7 @@
 
 class personaje: public QObject, public QGraphicsPixmapItem
 {
+    Q_OBJECT
 public:
     personaje();
     void set_imagen(int a);

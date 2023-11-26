@@ -21,28 +21,30 @@ fireball::fireball()
 void fireball::start_timers()
 {
     time_ball->start(50);
-
     time_mov_fireball->start(10);
 }
 
 void fireball::set_imagen()
 {
-    if(cont==0){
-        img=ball1;
-    }else if(cont==1){
-        img=ball2;
-    }else if(cont==2){
-        img=ball3;
-    }else if(cont==3){
-        img=ball4;
-    }else if(cont==4){
-        img=ball5;
-    }else if(cont==5){
-        img=ball6;
+    if (cont == 0) {
+        img = ball1;
+    } else if (cont == 1) {
+        img = ball2;
+    } else if (cont == 2) {
+        img = ball3;
+    } else if (cont == 3) {
+        img = ball4;
+    } else if (cont == 4) {
+        img = ball5;
+    } else if (cont == 5) {
+        img = ball6;
     }
-    if(cont!=5) cont++;
-    else cont=0;
-    setPixmap(img.scaled(50,50));
+
+    if (!img.isNull()) {
+        setPixmap(img.scaled(50, 50));
+    } else {
+        qDebug() << "Image is null!";
+    }
 }
 
 void fireball::mov_fireball()
