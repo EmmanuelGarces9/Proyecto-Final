@@ -9,10 +9,12 @@ game::game()
     backgroundgame= new background;
     prota = new personaje;
     ball = new fireball;
+    maria= new weed;
     set_background(backgroundgame);
     set_building(buildings);
     set_protagonista(prota);
     set_fireball(ball);
+    set_weed(maria);
 }
 
 game::~game()
@@ -21,6 +23,7 @@ game::~game()
     delete buildings;
     delete prota;
     delete ball;
+    delete maria;
 }
 
 void game::set_building(Edificio *edificios)
@@ -44,6 +47,11 @@ void game::set_fireball(fireball *ball)
 {
     addItem(ball);
     ball->start_timers();
+}
+
+void game::set_weed(weed *maria)
+{
+    addItem(maria);
 }
 
 void game::keyPressEvent(QKeyEvent *i)
