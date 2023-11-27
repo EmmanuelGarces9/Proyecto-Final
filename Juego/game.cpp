@@ -102,9 +102,11 @@ void game::checkColision()
         timerCollisions->stop();
         emit stopgame();
     }
-    if (colision){
-        emit counter();
-        colision=false;
+    if (prota->collidesWithItem(maria)==false){
+        if (colision==true){
+            emit counter();
+            colision=false;
+        }
     }
 
 }
