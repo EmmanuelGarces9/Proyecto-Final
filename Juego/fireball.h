@@ -13,6 +13,7 @@ class fireball: public QObject, public QGraphicsPixmapItem
 public:
     fireball();
     void start_timers();
+    void stop_timers();
 private:
     QPixmap ball1,ball2,ball3,ball4,ball5, ball6,img;
     QTimer *time_ball, *time_mov_fireball;

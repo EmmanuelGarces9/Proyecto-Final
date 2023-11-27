@@ -31,6 +31,8 @@ public:
     bool getMov_on() const;
     void setMov_on(bool newMov_on);
 
+    int getX() const;
+
 private:
     int x;
     int y;

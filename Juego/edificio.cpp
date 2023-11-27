@@ -65,6 +65,11 @@ void Edificio::setMov_on(bool newMov_on)
     mov_on = newMov_on;
 }
 
+int Edificio::getX() const
+{
+    return x;
+}
+
 void Edificio::randomY()
 {
     y=rand() % (edificiovalores::yDownMaxRange*10 + 1);

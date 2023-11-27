@@ -4,6 +4,7 @@
 #include "control_sprite.h"
 #include <cstdlib>
 #include <ctime>
+#include "edificio.h"
 
 namespace weedvalues{
     const int width=335;
@@ -36,6 +37,7 @@ private:
     int y;
     bool mov;
     QTimer *timer;
+    Edificio *building;
 
     void randomY();
 

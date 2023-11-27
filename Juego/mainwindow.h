@@ -18,11 +18,12 @@ public:
 
 private slots:
 
+    void gameover();
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
     game* juego;
     void startgame();
-
 };
 #endif // MAINWINDOW_H

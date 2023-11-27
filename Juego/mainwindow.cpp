@@ -10,7 +10,6 @@ MainWindow::MainWindow(QWidget *parent)
 
     juego=new game;
     startgame();
-
 }
 
 MainWindow::~MainWindow()
@@ -22,10 +21,26 @@ MainWindow::~MainWindow()
 
 void MainWindow::startgame()
 {
+    connect(juego, SIGNAL(stopgame()),this, SLOT(gameover()));
     ui->graphicsView->setGeometry(0, 0, width(), height());
     juego->setSceneRect(0, 0,
                         ui->graphicsView->width() - 2,
                         ui->graphicsView->height() - 2);
-
     ui->graphicsView->setScene(juego);
 }
+
+void MainWindow::gameover()
+{
+    ui->game_over_text->setGeometry(440, 200, 200, 150);
+    ui->pushButton->setGeometry(350, 547, 300, 50);
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+    ui->game_over_text->setGeometry(240, -150, 300, 150);
+    delete juego;
+    juego=new game;
+    startgame();
+}
+

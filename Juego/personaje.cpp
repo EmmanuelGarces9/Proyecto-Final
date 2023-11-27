@@ -9,7 +9,7 @@ personaje::personaje()
     move3.load(":/Imagenes/Dragon_protagonista/03.png");
 
     set_imagen(0);
-
+    setIs_alive(true);
     setPos(220,200);
 
     connect(time_prota,SIGNAL(timeout()),this,SLOT(cambio_imagen()));
@@ -39,4 +39,19 @@ void personaje::set_imagen(int a)
 void personaje::start_timer()
 {
     time_prota->start(100);
+}
+
+bool personaje::getIs_alive() const
+{
+    return is_alive;
+}
+
+void personaje::setIs_alive(bool newIs_alive)
+{
+    is_alive = newIs_alive;
+}
+
+void personaje::stop()
+{
+    time_prota->stop();
 }

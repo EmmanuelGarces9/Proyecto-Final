@@ -24,6 +24,12 @@ void fireball::start_timers()
     time_mov_fireball->start(10);
 }
 
+void fireball::stop_timers()
+{
+    time_ball->stop();
+    time_mov_fireball->stop();
+}
+
 void fireball::set_imagen()
 {
     if (cont == 0) {

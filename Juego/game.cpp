@@ -3,6 +3,8 @@
 #include "fireball.h"
 #include "personaje.h"
 
+
+
 game::game()
 {
     buildings=new Edificio;
@@ -19,11 +21,7 @@ game::game()
     timerCollisions = new QTimer;
 
     connect(timerCollisions,SIGNAL(timeout()),this,SLOT(checkColision()));
-
-    timerCollisions->start(10);
-
-
-
+    timerCollisions->start(1);
 }
 
 game::~game()
@@ -65,21 +63,39 @@ void game::set_weed(weed *maria)
 
 void game::keyPressEvent(QKeyEvent *i)
 {
-    int y=prota->y();
-    if(i->key()==Qt::Key_S && y<480){
-        prota->setY(prota->y()+15);
-    }else if(i->key()==Qt::Key_W && y>0){
-        prota->setY(prota->y()-15);
-    }
-}
-void game::checkColision()
-{
-    if (prota->collidesWithItem(buildings))
-    {
-        qDebug() << "Colision con edificio!";
-    }else if(prota->collidesWithItem(ball)){
-        qDebug() << "Colision con bola de fuego!";
+    if(prota->getIs_alive()){
+        int y=prota->y();
+        if(i->key()==Qt::Key_S && y<480){
+            prota->setY(prota->y()+15);
+        }else if(i->key()==Qt::Key_W && y>0){
+            prota->setY(prota->y()-15);
+        }
     }
 
-    if(prota->collidesWithItem(maria)) qDebug() << "Colision con hoja!";
+}
+
+void game::checkColision()
+{
+
+    if(prota->getIs_alive()){
+        if (prota->collidesWithItem(buildings))
+        {
+            qDebug() << "Colision con edificio!";
+            prota->setIs_alive(false);
+        }else if(prota->collidesWithItem(ball)){
+            qDebug() << "Colision con bola de fuego!";
+            prota->setIs_alive(false);
+        }
+        if(prota->collidesWithItem(maria)) qDebug() << "Colision con hoja!";
+    }
+    else{
+        backgroundgame->stop_moving();
+        buildings->stop_mov();
+        prota->stop();
+        ball->stop_timers();
+        maria->stop_mov();
+        timerCollisions->stop();
+        emit stopgame();
+    }
+
 }

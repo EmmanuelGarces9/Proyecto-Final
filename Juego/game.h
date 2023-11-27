@@ -7,10 +7,8 @@
 #include "personaje.h"
 #include "fireball.h"
 #include "weed.h"
-
-namespace gameValues {
-
-}
+#include <QWidget>
+#include <QLabel>
 
 class game : public QGraphicsScene
 {
@@ -25,6 +23,8 @@ private:
     fireball *ball;
     weed *maria;
     QTimer *timerCollisions;
+    QGraphicsTextItem* gameOverTextItem;
+
 
     void set_building(Edificio *edificios);
     void set_background(background *background_game);
@@ -32,8 +32,13 @@ private:
     void set_fireball(fireball *ball);
     void set_weed(weed* maria);
     void keyPressEvent(QKeyEvent *i);
+
 public slots:
     void checkColision();
+
+signals:
+    void stopgame();
+
 };
 
 #endif // GAME_H
