@@ -4,6 +4,7 @@ weed::weed()
 {
     timer=new QTimer;
     building=new Edificio;
+    points=0;
 
     QPixmap imagen("://sprites/weed.png");
     *full=imagen.copy();
@@ -63,6 +64,8 @@ void weed::setMov(bool newMov)
 {
     mov = newMov;
 }
+
+
 
 void weed::randomY()
 {

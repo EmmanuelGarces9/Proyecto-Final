@@ -12,6 +12,7 @@ game::game()
     prota = new personaje;
     ball = new fireball;
     maria= new weed;
+    colision=false;
     set_background(backgroundgame);
     set_building(buildings);
     set_protagonista(prota);
@@ -77,6 +78,7 @@ void game::keyPressEvent(QKeyEvent *i)
 void game::checkColision()
 {
 
+
     if(prota->getIs_alive()){
         if (prota->collidesWithItem(buildings))
         {
@@ -86,7 +88,10 @@ void game::checkColision()
             qDebug() << "Colision con bola de fuego!";
             prota->setIs_alive(false);
         }
-        if(prota->collidesWithItem(maria)) qDebug() << "Colision con hoja!";
+        if(prota->collidesWithItem(maria)){
+            qDebug() << "Colision con hoja!";
+            colision=true;
+        }
     }
     else{
         backgroundgame->stop_moving();
@@ -96,6 +101,10 @@ void game::checkColision()
         maria->stop_mov();
         timerCollisions->stop();
         emit stopgame();
+    }
+    if (colision){
+        emit counter();
+        colision=false;
     }
 
 }

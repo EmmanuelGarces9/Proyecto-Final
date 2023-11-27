@@ -32,12 +32,14 @@ public:
     bool getMov() const;
     void setMov(bool newMov);
 
+    int points;
 private:
     int x;
     int y;
     bool mov;
     QTimer *timer;
     Edificio *building;
+
 
     void randomY();
 

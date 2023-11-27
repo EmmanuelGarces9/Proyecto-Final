@@ -24,7 +24,7 @@ private:
     weed *maria;
     QTimer *timerCollisions;
     QGraphicsTextItem* gameOverTextItem;
-
+    bool colision;
 
     void set_building(Edificio *edificios);
     void set_background(background *background_game);
@@ -38,6 +38,7 @@ public slots:
 
 signals:
     void stopgame();
+    void counter();
 
 };
 
