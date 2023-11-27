@@ -77,16 +77,14 @@ void game::keyPressEvent(QKeyEvent *i)
 
 void game::checkColision()
 {
-
-
     if(prota->getIs_alive()){
         if (prota->collidesWithItem(buildings))
         {
             qDebug() << "Colision con edificio!";
-            prota->setIs_alive(false);
+            //prota->setIs_alive(false);
         }else if(prota->collidesWithItem(ball)){
             qDebug() << "Colision con bola de fuego!";
-            prota->setIs_alive(false);
+            //prota->setIs_alive(false);
         }
         if(prota->collidesWithItem(maria)){
             qDebug() << "Colision con hoja!";
@@ -109,4 +107,8 @@ void game::checkColision()
         }
     }
 
+}
+void game::setFireballVelocity(int v0)
+{
+    ball->setInitialVelocity(v0);
 }

@@ -12,7 +12,9 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGraphicsView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,6 +24,9 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QGraphicsView *graphicsView;
+    QLabel *game_over_text;
+    QPushButton *pushButton;
+    QLabel *label;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -33,6 +38,24 @@ public:
         graphicsView = new QGraphicsView(centralwidget);
         graphicsView->setObjectName("graphicsView");
         graphicsView->setGeometry(QRect(270, 70, 431, 331));
+        game_over_text = new QLabel(centralwidget);
+        game_over_text->setObjectName("game_over_text");
+        game_over_text->setGeometry(QRect(770, 650, 141, 61));
+        QFont font;
+        font.setPointSize(15);
+        font.setBold(true);
+        font.setItalic(true);
+        font.setUnderline(false);
+        font.setStrikeOut(false);
+        font.setKerning(true);
+        font.setStyleStrategy(QFont::PreferAntialias);
+        game_over_text->setFont(font);
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(320, 690, 271, 31));
+        label = new QLabel(centralwidget);
+        label->setObjectName("label");
+        label->setGeometry(QRect(50, 10, 131, 41));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -43,6 +66,9 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        game_over_text->setText(QCoreApplication::translate("MainWindow", "  GAME OVER!", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Reset", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "PUNTAJE: ", nullptr));
     } // retranslateUi
 
 };

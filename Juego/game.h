@@ -16,6 +16,7 @@ class game : public QGraphicsScene
 public:
     game();
     ~game();
+    void setFireballVelocity(int v0);
 private:
     Edificio* buildings;
     background *backgroundgame;

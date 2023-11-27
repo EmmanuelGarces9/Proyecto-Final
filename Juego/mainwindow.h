@@ -16,6 +16,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    MainWindow(double V0,QWidget *parent = nullptr);
+    void startgame();
 
 private slots:
     void update_puntaje();
@@ -25,7 +27,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     game* juego;
-    void startgame();
-    int puntaje;
+    int puntaje=0;
 };
 #endif // MAINWINDOW_H
