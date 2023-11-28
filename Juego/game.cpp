@@ -78,12 +78,20 @@ void game::checkColision()
     if(prota->getIs_alive()){
         if (prota->collidesWithItem(buildings))
         {
+<<<<<<< HEAD
            prota->setIs_alive(false);
 
         }else if(prota->collidesWithItem(ball)){
 
            prota->setIs_alive(false);
 
+=======
+            qDebug() << "Colision con edificio!";
+            //prota->setIs_alive(false);
+        }else if(prota->collidesWithItem(ball)){
+            qDebug() << "Colision con bola de fuego!";
+            //prota->setIs_alive(false);
+>>>>>>> d8dfba84c56c5a981fcd208227ba0f9c94900d1c
         }
         if(prota->collidesWithItem(maria)){
             maria->collision();
@@ -102,4 +110,8 @@ void game::checkColision()
         emit stopgame();
     }
 
+}
+void game::setFireballVelocity(int v0)
+{
+    ball->setInitialVelocity(v0);
 }

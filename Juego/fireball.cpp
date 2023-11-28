@@ -60,9 +60,13 @@ void fireball::mov_fireball()
         y0 = rand() % 501 + 50;
         t=0;
     }
-
-
     // Actualizar el tiempo transcurrido
-
     t += 0.1;
+}
+
+void fireball::setInitialVelocity(double newV0)
+{
+    v0 = newV0;
+    V0x = v0 * cos(theta * (M_PI/180));
+    V0y = v0 * sin(theta * (M_PI/180));
 }
