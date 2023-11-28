@@ -13,7 +13,7 @@ namespace weedvalues{
     const int limitx=-150;
     const int yDownMaxRange=45;
     const int yDownMinRange=7;
-    const int xStart=986;
+    const int xStart=1050;
     const int frequency=50;
 
     const double scale=0.26;
@@ -31,7 +31,7 @@ public:
 
     bool getMov() const;
     void setMov(bool newMov);
-
+    void collision();
     int points;
 private:
     int x;
@@ -42,6 +42,7 @@ private:
 
 
     void randomY();
+
 
 private slots:
     void movement();

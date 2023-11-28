@@ -20,9 +20,10 @@ MainWindow::~MainWindow()
 
 void MainWindow::update_puntaje()
 {
-    QString qtexto = "PUNTAJE: ";
     puntaje++;
+    QString qtexto = "PUNTAJE: ";
     qtexto += QString::number(puntaje);
+
 
     ui->label->setText(qtexto);
 }
@@ -37,6 +38,9 @@ void MainWindow::startgame()
                         ui->graphicsView->width() - 2,
                         ui->graphicsView->height() - 2);
     ui->graphicsView->setScene(juego);
+    QString qtexto = "PUNTAJE: 0";
+    ui->label->setText(qtexto);
+    ui->label->setGeometry(45,-110, 500, 300);
 }
 
 void MainWindow::gameover()
@@ -53,8 +57,9 @@ void MainWindow::on_pushButton_clicked()
     ui->game_over_text->setGeometry(240, -150, 300, 150);
     delete juego;
     juego=new game;
-    QString qtexto = "PUNTAJE: ";
+    QString qtexto = "PUNTAJE: 0";
     ui->label->setText(qtexto);
+    ui->label->setGeometry(45,-110, 500, 300);
     startgame();
 }
 

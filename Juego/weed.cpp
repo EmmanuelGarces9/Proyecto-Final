@@ -43,8 +43,6 @@ void weed::start_mov()
     }
     if(building->getX()+x==20){
         x-20;
-            qDebug()<<"hola";
-
     }
     setPos(x, y);
 
@@ -63,6 +61,15 @@ bool weed::getMov() const
 void weed::setMov(bool newMov)
 {
     mov = newMov;
+}
+
+void weed::collision()
+{
+    Show_Sprite(0);
+    randomY();
+    x=weedvalues::xStart+300;
+    setPos(x,y);
+    Show_Sprite(1);
 }
 
 

@@ -1,7 +1,5 @@
 #include "game.h"
-#include "edificio.h"
-#include "fireball.h"
-#include "personaje.h"
+
 
 
 
@@ -22,7 +20,7 @@ game::game()
     timerCollisions = new QTimer;
 
     connect(timerCollisions,SIGNAL(timeout()),this,SLOT(checkColision()));
-    timerCollisions->start(1);
+    timerCollisions->start(10);
 }
 
 game::~game()
@@ -77,36 +75,31 @@ void game::keyPressEvent(QKeyEvent *i)
 
 void game::checkColision()
 {
-
-
     if(prota->getIs_alive()){
         if (prota->collidesWithItem(buildings))
         {
-            qDebug() << "Colision con edificio!";
-            prota->setIs_alive(false);
+           prota->setIs_alive(false);
+
         }else if(prota->collidesWithItem(ball)){
-            qDebug() << "Colision con bola de fuego!";
-            prota->setIs_alive(false);
+
+           prota->setIs_alive(false);
+
         }
         if(prota->collidesWithItem(maria)){
-            qDebug() << "Colision con hoja!";
-            colision=true;
+            maria->collision();
+            emit counter();
         }
     }
     else{
+        ball->setVisible(0);
         backgroundgame->stop_moving();
         buildings->stop_mov();
-        prota->stop();
         ball->stop_timers();
         maria->stop_mov();
         timerCollisions->stop();
+        prota->stop();
+        prota->start_dead();
         emit stopgame();
-    }
-    if (prota->collidesWithItem(maria)==false){
-        if (colision==true){
-            emit counter();
-            colision=false;
-        }
     }
 
 }

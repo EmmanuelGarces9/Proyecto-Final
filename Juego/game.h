@@ -22,7 +22,7 @@ private:
     personaje *prota;
     fireball *ball;
     weed *maria;
-    QTimer *timerCollisions;
+    QTimer *timerCollisions, *dead_time;
     QGraphicsTextItem* gameOverTextItem;
     bool colision;
 
@@ -32,8 +32,10 @@ private:
     void set_fireball(fireball *ball);
     void set_weed(weed* maria);
     void keyPressEvent(QKeyEvent *i);
+    bool suficiente;
 
 public slots:
+
     void checkColision();
 
 signals:

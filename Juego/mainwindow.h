@@ -26,6 +26,6 @@ private:
     Ui::MainWindow *ui;
     game* juego;
     void startgame();
-    int puntaje;
+    int puntaje=0;
 };
 #endif // MAINWINDOW_H

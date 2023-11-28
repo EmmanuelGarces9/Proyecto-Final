@@ -56,6 +56,13 @@ public:
         label = new QLabel(centralwidget);
         label->setObjectName("label");
         label->setGeometry(QRect(50, 10, 131, 41));
+        QFont font1;
+        font1.setPointSize(16);
+        font1.setBold(true);
+        font1.setItalic(true);
+        font1.setUnderline(false);
+        font1.setStrikeOut(false);
+        label->setFont(font1);
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
