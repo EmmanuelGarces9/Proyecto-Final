@@ -5,11 +5,11 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-//    ui->setupUi(this);
-//    setFixedSize(1000, 600);
-//    puntaje=0;
-//    juego=new game;
-//    startgame();
+    ui->setupUi(this);
+    setFixedSize(1000, 600);
+    puntaje=0;
+    juego=new game;
+    startgame();
 }
 
 MainWindow::~MainWindow()
