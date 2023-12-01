@@ -25,7 +25,6 @@ private:
     weed *maria;
     QTimer *timerCollisions, *dead_time;
     QGraphicsTextItem* gameOverTextItem;
-    bool colision;
 
     void set_building(Edificio *edificios);
     void set_background(background *background_game);
@@ -33,7 +32,6 @@ private:
     void set_fireball(fireball *ball);
     void set_weed(weed* maria);
     void keyPressEvent(QKeyEvent *i);
-    bool suficiente;
 
 public slots:
 
