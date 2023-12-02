@@ -9,7 +9,7 @@ fireball::fireball()
     ball5.load(":/Imagenes/Bola de fuego/04.png");
     ball6.load(":/Imagenes/Bola de fuego/05.png");
 
-    setPos(880,200);
+    setPos(980,200);
 
     time_ball = new QTimer;
     time_mov_fireball = new QTimer;
@@ -21,7 +21,7 @@ fireball::fireball()
 void fireball::start_timers()
 {
     time_ball->start(50);
-    time_mov_fireball->start(10);
+    time_mov_fireball->start(velTimer);
 }
 
 void fireball::stop_timers()
@@ -69,4 +69,9 @@ void fireball::setInitialVelocity(double newV0)
     v0 = newV0;
     V0x = v0 * cos(theta * (M_PI/180));
     V0y = v0 * sin(theta * (M_PI/180));
+}
+
+void fireball::setVelTimer(int newVelTimer)
+{
+    velTimer = newVelTimer;
 }

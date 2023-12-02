@@ -81,7 +81,6 @@ void personaje::dead_animation()
     posy=y();
     posx=x();
     if(yinitial_dead1-posy<165 and deady==false){
-        qDebug()<<"Deberia subir";
         set_imagen(0);
         posy+=dead_vy;
         setPos(posx,posy);

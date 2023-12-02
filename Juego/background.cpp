@@ -39,9 +39,14 @@ void background::setMoving(bool newMoving)
     moving = newMoving;
 }
 
+void background::setBackground_speed(int newBackground_speed)
+{
+    background_speed = newBackground_speed;
+}
+
 void background::start_moving()
 {
-    x+=backgroundvalues::background_speed;
+    x+=background_speed;
 
     if (x > (backgroundvalues::backgroundresetX)){
         x = 0;

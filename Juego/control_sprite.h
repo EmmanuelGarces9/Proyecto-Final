@@ -21,7 +21,6 @@ public:
     int Get_Width_Sprite();
     void Set_Height_Sprite(int height);
     int Get_Height_Sprite();
-
     QPixmap *full, *actual;
 protected:
     int *width_sprite;

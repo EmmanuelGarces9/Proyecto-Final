@@ -35,7 +35,7 @@ weed::~weed()
 
 void weed::start_mov()
 {
-    x-=weedvalues::speed;
+    x-=speed;
 
     if(x<=weedvalues::limitx){
         x=weedvalues::xStart;
@@ -72,7 +72,10 @@ void weed::collision()
     Show_Sprite(1);
 }
 
-
+void weed::setSpeed(int newSpeed)
+{
+    speed = newSpeed;
+}
 
 void weed::randomY()
 {
