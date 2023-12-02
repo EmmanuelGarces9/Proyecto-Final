@@ -78,6 +78,9 @@ void game::to_show_history()
     maria->Show_Sprite(0);
     buildings->Show_Sprite(0);
 }
+
+
+
 void game::checkColision()
 {
     if(prota->getIs_alive()){
@@ -93,6 +96,8 @@ void game::checkColision()
         }
     }
     else{
+        prota->setYinitial_dead1(prota->y());
+
         ball->setVisible(0);
         backgroundgame->stop_moving();
         buildings->stop_mov();
@@ -102,6 +107,7 @@ void game::checkColision()
         prota->stop();
         prota->start_dead();
         emit stopgame();
+
     }
 
 }

@@ -33,6 +33,7 @@ void MainWindow::update_puntaje()
 
 void MainWindow::startgame()
 {
+
     connect(juego, SIGNAL(stopgame()),this, SLOT(gameover()));
     connect(juego, SIGNAL(counter()), this, SLOT(update_puntaje()));
     ui->graphicsView->setGeometry(0, 0, width(), height());
@@ -58,6 +59,7 @@ void MainWindow::on_pushButton_clicked()
 {
     puntaje=0;
     ui->history->setGeometry(240, 900, 300, 150);
+    ui->readbutton->setGeometry(240, -150, 300, 150);
     ui->pushButton->setGeometry(240, -150, 300, 150);
     ui->game_over_text->setGeometry(240, -150, 300, 150);
     delete juego;

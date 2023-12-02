@@ -1,36 +1,93 @@
 
-En la fecha:Sat Dec 02 00:03:07 2023
+En la fecha:Sat Dec 02 11:24:40 2023
  usted jugó y su máximo puntaje fue: 0
 
-En la fecha:Sat Dec 02 00:04:08 2023
+En la fecha:Sat Dec 02 11:26:49 2023
  usted jugó y su máximo puntaje fue: 0
 
-En la fecha:Sat Dec 02 00:04:18 2023
+En la fecha:Sat Dec 02 11:35:40 2023
  usted jugó y su máximo puntaje fue: 0
 
-En la fecha:Sat Dec 02 00:05:53 2023
+En la fecha:Sat Dec 02 11:35:47 2023
  usted jugó y su máximo puntaje fue: 0
 
-En la fecha:Sat Dec 02 00:05:59 2023
- usted jugó y su máximo puntaje fue: 0
-
-En la fecha:Sat Dec 02 00:06:47 2023
- usted jugó y su máximo puntaje fue: 0
-
-En la fecha:Sat Dec 02 00:06:54 2023
- usted jugó y su máximo puntaje fue: 0
-
-En la fecha:Sat Dec 02 00:06:57 2023
- usted jugó y su máximo puntaje fue: 0
-
-En la fecha:Sat Dec 02 00:07:00 2023
- usted jugó y su máximo puntaje fue: 0
-
-En la fecha:Sat Dec 02 00:31:31 2023
- usted jugó y su máximo puntaje fue: 0
-
-En la fecha:Sat Dec 02 00:31:37 2023
- usted jugó y su máximo puntaje fue: 0
-
-En la fecha:Sat Dec 02 00:31:46 2023
+En la fecha:Sat Dec 02 11:35:54 2023
  usted jugó y su máximo puntaje fue: 2
+
+En la fecha:Sat Dec 02 11:36:20 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:36:28 2023
+ usted jugó y su máximo puntaje fue: 1
+
+En la fecha:Sat Dec 02 11:38:17 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:38:44 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:39:04 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:39:25 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:39:51 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:40:08 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:40:23 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:45:53 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:46:14 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:47:14 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:49:23 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:49:39 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:50:34 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:50:43 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:51:03 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:51:16 2023
+ usted jugó y su máximo puntaje fue: 1
+
+En la fecha:Sat Dec 02 11:51:50 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:52:16 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:52:22 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:52:32 2023
+ usted jugó y su máximo puntaje fue: 1
+
+En la fecha:Sat Dec 02 11:52:35 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:52:50 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:59:06 2023
+ usted jugó y su máximo puntaje fue: 0
+
+En la fecha:Sat Dec 02 11:59:12 2023
+ usted jugó y su máximo puntaje fue: 0
