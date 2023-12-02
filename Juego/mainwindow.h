@@ -17,7 +17,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    MainWindow(double V0,QWidget *parent = nullptr);
     void startgame();
 
 private slots:

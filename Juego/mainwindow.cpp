@@ -66,16 +66,5 @@ void MainWindow::on_pushButton_clicked()
     startgame();
 }
 
-MainWindow::MainWindow(double V0, QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
-{
-    ui->setupUi(this);
-    setFixedSize(1000, 600);
-
-    juego=new game;
-    juego->setFireballVelocity(V0);
-    startgame();
-}
 
 
