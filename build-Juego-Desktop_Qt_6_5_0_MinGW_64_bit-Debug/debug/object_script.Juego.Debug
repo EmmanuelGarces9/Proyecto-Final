@@ -1,3 +1,4 @@
+debug/archivos.o
 debug/background.o
 debug/control_sprite.o
 debug/edificio.o

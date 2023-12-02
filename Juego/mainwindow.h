@@ -4,6 +4,7 @@
 #include <QMainWindow>
 
 #include "game.h"
+#include "archivos.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -28,6 +29,7 @@ private:
     Ui::MainWindow *ui;
     game* juego;
 
-    int puntaje=0;
+    int puntaje;
+    archivos *files;
 };
 #endif // MAINWINDOW_H

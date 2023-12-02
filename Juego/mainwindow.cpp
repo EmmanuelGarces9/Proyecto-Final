@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setFixedSize(1000, 600);
+    files=new archivos;
     puntaje=0;
     juego=new game;
     startgame();
@@ -16,6 +17,7 @@ MainWindow::~MainWindow()
 {
     delete ui;
     delete juego;
+    delete files;
 }
 
 void MainWindow::update_puntaje()
@@ -45,6 +47,7 @@ void MainWindow::startgame()
 
 void MainWindow::gameover()
 {
+    files->write_file(puntaje);
     ui->game_over_text->setGeometry(440, 200, 200, 150);
     ui->pushButton->setGeometry(350, 547, 300, 50);
 }
