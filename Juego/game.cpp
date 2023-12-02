@@ -71,7 +71,6 @@ void game::keyPressEvent(QKeyEvent *i)
     }
 
 }
-
 void game::checkColision()
 {
     if(prota->getIs_alive()){
