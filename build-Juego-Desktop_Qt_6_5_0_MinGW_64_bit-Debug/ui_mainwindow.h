@@ -27,6 +27,8 @@ public:
     QLabel *game_over_text;
     QPushButton *pushButton;
     QLabel *label;
+    QPushButton *readbutton;
+    QLabel *history;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -63,6 +65,12 @@ public:
         font1.setUnderline(false);
         font1.setStrikeOut(false);
         label->setFont(font1);
+        readbutton = new QPushButton(centralwidget);
+        readbutton->setObjectName("readbutton");
+        readbutton->setGeometry(QRect(0, 690, 261, 31));
+        history = new QLabel(centralwidget);
+        history->setObjectName("history");
+        history->setGeometry(QRect(10, 660, 49, 16));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -76,6 +84,8 @@ public:
         game_over_text->setText(QCoreApplication::translate("MainWindow", "  GAME OVER!", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Reset", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "PUNTAJE: ", nullptr));
+        readbutton->setText(QCoreApplication::translate("MainWindow", "Show history", nullptr));
+        history->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
     } // retranslateUi
 
 };

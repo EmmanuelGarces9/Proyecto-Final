@@ -14,8 +14,10 @@ class archivos
 private:
     string file_name;
 public:
+
     archivos();
     void write_file(int points);
+    string read_file();
 
 };
 #endif // ARCHIVOS_H

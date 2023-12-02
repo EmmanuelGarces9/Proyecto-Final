@@ -71,6 +71,13 @@ void game::keyPressEvent(QKeyEvent *i)
     }
 
 }
+
+void game::to_show_history()
+{
+    prota->setVisible(0);
+    maria->Show_Sprite(0);
+    buildings->Show_Sprite(0);
+}
 void game::checkColision()
 {
     if(prota->getIs_alive()){

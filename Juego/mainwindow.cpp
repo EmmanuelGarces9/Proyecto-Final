@@ -49,13 +49,15 @@ void MainWindow::gameover()
 {
     files->write_file(puntaje);
     ui->game_over_text->setGeometry(440, 200, 200, 150);
-    ui->pushButton->setGeometry(350, 547, 300, 50);
+    ui->pushButton->setGeometry(350-200, 547, 300, 50);
+    ui->readbutton->setGeometry(350+200, 547, 300, 50);
 }
 
 
 void MainWindow::on_pushButton_clicked()
 {
     puntaje=0;
+    ui->history->setGeometry(240, 900, 300, 150);
     ui->pushButton->setGeometry(240, -150, 300, 150);
     ui->game_over_text->setGeometry(240, -150, 300, 150);
     delete juego;
@@ -67,4 +69,18 @@ void MainWindow::on_pushButton_clicked()
 }
 
 
+
+
+void MainWindow::on_readbutton_clicked()
+{
+    ui->game_over_text->setGeometry(240, -150, 300, 150);
+    ui->label->setGeometry(240, -150, 300, 150);
+    ui->readbutton->setGeometry(240, -150, 300, 150);
+    juego->to_show_history();
+    string info;
+    info=files->read_file();
+    QString qinfo=QString::fromStdString(info);
+    ui->history->setText(qinfo);
+    ui->history->setGeometry(45,20,500,300);
+}
 

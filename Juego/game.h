@@ -17,6 +17,7 @@ public:
     game();
     ~game();
     void setFireballVelocity(int v0);
+    void to_show_history();
 private:
     Edificio* buildings;
     background *backgroundgame;
@@ -25,13 +26,13 @@ private:
     weed *maria;
     QTimer *timerCollisions, *dead_time;
     QGraphicsTextItem* gameOverTextItem;
-
     void set_building(Edificio *edificios);
     void set_background(background *background_game);
     void set_protagonista(personaje *prota);
     void set_fireball(fireball *ball);
     void set_weed(weed* maria);
     void keyPressEvent(QKeyEvent *i);
+
 
 public slots:
 

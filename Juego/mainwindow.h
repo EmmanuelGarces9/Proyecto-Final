@@ -24,6 +24,8 @@ private slots:
     void gameover();
     void on_pushButton_clicked();
 
+    void on_readbutton_clicked();
+
 private:
     Ui::MainWindow *ui;
     game* juego;
