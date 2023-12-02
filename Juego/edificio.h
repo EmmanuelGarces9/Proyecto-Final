@@ -2,19 +2,15 @@
 #define EDIFICIO_H
 
 #include "control_sprite.h"
-#include <cstdlib>
-#include <ctime>
 
 namespace edificiovalores{
     const int width=147;
     const int height=530;
-    const int speed=20;
     const int limitx=-150;
     const int yDownMaxRange=45;
     const int yDownMinRange=7;
     const int xStart=1100;
     const int frequency=50;
-
 }
 
 
@@ -27,21 +23,19 @@ public:
     void start_mov();
     void stop_mov();
     void start_timer();
-
     bool getMov_on() const;
     void setMov_on(bool newMov_on);
-
     int getX() const;
+
+    void setSpeed(int newSpeed);
 
 private:
     int x;
     int y;
     bool mov_on;
     QTimer *timer;
-
-
-
     void randomY();
+    int speed=0;
 
 private slots:
     void movement();

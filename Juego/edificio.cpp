@@ -35,7 +35,7 @@ Edificio::~Edificio()
 
 void Edificio::start_mov()
 {
-    x-=edificiovalores::speed;
+    x-=speed;
 
     if(x<=edificiovalores::limitx){
         x=edificiovalores::xStart;
@@ -74,6 +74,11 @@ void Edificio::randomY()
 {
     y=rand() % (edificiovalores::yDownMaxRange*10 + 1);
     y=600-y-edificiovalores::yDownMinRange*10;
+}
+
+void Edificio::setSpeed(int newSpeed)
+{
+    speed = newSpeed;
 }
 
 void Edificio::movement()

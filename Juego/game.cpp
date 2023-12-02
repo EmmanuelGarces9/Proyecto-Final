@@ -1,15 +1,15 @@
 #include "game.h"
-
-
-
-
-game::game()
+game::game(int velBackground, int velBuilding ,int velFireball, int velWeed)
 {
     buildings=new Edificio;
     backgroundgame= new background;
     prota = new personaje;
     ball = new fireball;
     maria= new weed;
+    backgroundgame->setBackground_speed(velBackground);
+    buildings->setSpeed(velBuilding);
+    ball->setVelTimer(velFireball);
+    maria->setSpeed(velWeed);
     set_background(backgroundgame);
     set_building(buildings);
     set_protagonista(prota);
@@ -69,7 +69,6 @@ void game::keyPressEvent(QKeyEvent *i)
             prota->setY(prota->y()-15);
         }
     }
-
 }
 
 void game::to_show_history()
@@ -104,8 +103,4 @@ void game::checkColision()
         emit stopgame();
     }
 
-}
-void game::setFireballVelocity(int v0)
-{
-    ball->setInitialVelocity(v0);
 }

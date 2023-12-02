@@ -9,8 +9,15 @@ MainWindow::MainWindow(QWidget *parent)
     setFixedSize(1000, 600);
     files=new archivos;
     puntaje=0;
-    juego=new game;
-    startgame();
+    juego =new game(0,0,-1,0);
+    ui->graphicsView->setGeometry(0, 0, width(), height());
+    juego->setSceneRect(0, 0,
+                        ui->graphicsView->width() - 2,
+                        ui->graphicsView->height() - 2);
+    ui->graphicsView->setScene(juego);
+    ui->LevelOption->setGeometry(370, 250, 281, 21);
+    ui->EasyLevel->setGeometry(390, 300, 75, 25);
+    ui->HardLevel->setGeometry(550, 300, 75, 25);
 }
 
 MainWindow::~MainWindow()
@@ -25,8 +32,6 @@ void MainWindow::update_puntaje()
     puntaje++;
     QString qtexto = "PUNTAJE: ";
     qtexto += QString::number(puntaje);
-
-
     ui->label->setText(qtexto);
 }
 
@@ -60,16 +65,14 @@ void MainWindow::on_pushButton_clicked()
     ui->history->setGeometry(240, 900, 300, 150);
     ui->pushButton->setGeometry(240, -150, 300, 150);
     ui->game_over_text->setGeometry(240, -150, 300, 150);
-    delete juego;
-    juego=new game;
+    ui->readbutton->setGeometry(240, -150, 300, 150);
+    ui->LevelOption->setGeometry(370, 250, 281, 21);
+    ui->EasyLevel->setGeometry(390, 300, 75, 25);
+    ui->HardLevel->setGeometry(550, 300, 75, 25);
     QString qtexto = "PUNTAJE: 0";
     ui->label->setText(qtexto);
     ui->label->setGeometry(45,-110, 500, 300);
-    startgame();
 }
-
-
-
 
 void MainWindow::on_readbutton_clicked()
 {
@@ -82,5 +85,31 @@ void MainWindow::on_readbutton_clicked()
     QString qinfo=QString::fromStdString(info);
     ui->history->setText(qinfo);
     ui->history->setGeometry(45,20,500,300);
+}
+
+void MainWindow::on_EasyLevel_clicked()
+{
+    ui->LevelOption->setGeometry(240, -150, 300, 150);
+    ui->EasyLevel->setGeometry(240, -150, 300, 150);
+    ui->HardLevel->setGeometry(240, -150, 300, 150);
+    delete juego;
+    juego=new game(8,10,25,10);
+    QString qtexto = "PUNTAJE: 0";
+    ui->label->setText(qtexto);
+    ui->label->setGeometry(45,-110, 500, 300);
+    startgame();
+}
+
+void MainWindow::on_HardLevel_clicked()
+{
+    ui->LevelOption->setGeometry(240, -150, 300, 150);
+    ui->EasyLevel->setGeometry(240, -150, 300, 150);
+    ui->HardLevel->setGeometry(240, -150, 300, 150);
+    delete juego;
+    juego=new game(12,20,10,20);
+    QString qtexto = "PUNTAJE: 0";
+    ui->label->setText(qtexto);
+    ui->label->setGeometry(45,-110, 500, 300);
+    startgame();
 }
 

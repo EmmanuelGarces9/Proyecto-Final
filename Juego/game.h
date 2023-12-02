@@ -14,9 +14,8 @@ class game : public QGraphicsScene
 {
     Q_OBJECT
 public:
-    game();
+    game(int velBackground, int velBuilding ,int velFireball, int velWeed);
     ~game();
-    void setFireballVelocity(int v0);
     void to_show_history();
 private:
     Edificio* buildings;
@@ -33,9 +32,7 @@ private:
     void set_weed(weed* maria);
     void keyPressEvent(QKeyEvent *i);
 
-
 public slots:
-
     void checkColision();
 
 signals:

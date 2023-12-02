@@ -4,6 +4,7 @@
 #include <QMainWindow>
 
 #include "game.h"
+#include "background.h"
 #include "archivos.h"
 
 QT_BEGIN_NAMESPACE
@@ -23,13 +24,14 @@ private slots:
     void update_puntaje();
     void gameover();
     void on_pushButton_clicked();
-
     void on_readbutton_clicked();
+    void on_EasyLevel_clicked();
+    void on_HardLevel_clicked();
 
 private:
     Ui::MainWindow *ui;
     game* juego;
-
+    background* backgroundStopped;
     int puntaje;
     archivos *files;
 };
