@@ -91,10 +91,10 @@ public:
         LevelOption->setFont(font2);
         name = new QLabel(centralwidget);
         name->setObjectName("name");
-        name->setGeometry(QRect(210, 430, 641, 131));
+        name->setGeometry(QRect(280, 440, 451, 131));
         QFont font3;
         font3.setFamilies({QString::fromUtf8("Rockwell Extra Bold")});
-        font3.setPointSize(72);
+        font3.setPointSize(48);
         font3.setBold(true);
         name->setFont(font3);
         MainWindow->setCentralWidget(centralwidget);

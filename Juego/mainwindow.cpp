@@ -15,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
                         ui->graphicsView->width() - 2,
                         ui->graphicsView->height() - 2);
     ui->graphicsView->setScene(juego);
-    ui->name->setGeometry(200, 100, 641, 131);
+    ui->name->setGeometry(300, 100, 641, 131);
     ui->LevelOption->setGeometry(370, 250, 281, 21);
     ui->EasyLevel->setGeometry(390, 300, 75, 25);
     ui->HardLevel->setGeometry(550, 300, 75, 25);
