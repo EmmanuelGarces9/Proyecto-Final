@@ -9,7 +9,6 @@
 
 namespace maincharvalues{
     const int vy=-40;
-    const int dead_ay=5;
     const int dead_limit_y=800;
 }
 

@@ -31,8 +31,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
     game* juego;
-    background* backgroundStopped;
     int puntaje;
     archivos *files;
+
 };
 #endif // MAINWINDOW_H

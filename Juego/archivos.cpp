@@ -38,10 +38,10 @@ string archivos::read_file()
         {
             contenido += linea + '\n';
         }
-        return contenido;
 
     }
     catch (const exception& e){
         qDebug()<<e.what();
     }
+    return contenido;
 }

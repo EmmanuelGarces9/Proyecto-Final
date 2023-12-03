@@ -3,9 +3,6 @@
 weed::weed()
 {
     timer=new QTimer;
-    building=new Edificio;
-    points=0;
-
     QPixmap imagen("://sprites/weed.png");
     *full=imagen.copy();
 
@@ -30,7 +27,6 @@ weed::weed()
 weed::~weed()
 {
     delete timer;
-    delete building;
 }
 
 void weed::start_mov()
@@ -40,9 +36,6 @@ void weed::start_mov()
     if(x<=weedvalues::limitx){
         x=weedvalues::xStart;
         randomY();
-    }
-    if(building->getX()+x==20){
-        x-20;
     }
     setPos(x, y);
 

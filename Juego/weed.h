@@ -29,8 +29,6 @@ public:
     void setMov(bool newMov);
     void collision();
     int speed=0;
-    int points;
-
     void setSpeed(int newSpeed);
 
 private:
@@ -38,7 +36,6 @@ private:
     int y;
     bool mov;
     QTimer *timer;
-    Edificio *building;
     void randomY();
 
 private slots:
