@@ -17,7 +17,6 @@ SOURCES += \
     game.cpp \
     main.cpp \
     mainwindow.cpp \
-    music.cpp \
     personaje.cpp \
     weed.cpp
 
@@ -29,7 +28,6 @@ HEADERS += \
     fireball.h \
     game.h \
     mainwindow.h \
-    music.h \
     personaje.h \
     weed.h
 
