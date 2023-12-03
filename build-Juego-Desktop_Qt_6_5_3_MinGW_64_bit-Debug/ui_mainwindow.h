@@ -32,6 +32,7 @@ public:
     QPushButton *EasyLevel;
     QPushButton *HardLevel;
     QLabel *LevelOption;
+    QLabel *name;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -73,7 +74,7 @@ public:
         readbutton->setGeometry(QRect(0, 690, 261, 31));
         history = new QLabel(centralwidget);
         history->setObjectName("history");
-        history->setGeometry(QRect(10, 660, 49, 16));
+        history->setGeometry(QRect(10, 660, 481, 361));
         EasyLevel = new QPushButton(centralwidget);
         EasyLevel->setObjectName("EasyLevel");
         EasyLevel->setGeometry(QRect(510, 650, 75, 25));
@@ -88,6 +89,14 @@ public:
         font2.setPointSize(12);
         font2.setBold(true);
         LevelOption->setFont(font2);
+        name = new QLabel(centralwidget);
+        name->setObjectName("name");
+        name->setGeometry(QRect(210, 430, 641, 131));
+        QFont font3;
+        font3.setFamilies({QString::fromUtf8("Rockwell Extra Bold")});
+        font3.setPointSize(72);
+        font3.setBold(true);
+        name->setFont(font3);
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -106,6 +115,7 @@ public:
         EasyLevel->setText(QCoreApplication::translate("MainWindow", "Easy", nullptr));
         HardLevel->setText(QCoreApplication::translate("MainWindow", "Hard", nullptr));
         LevelOption->setText(QCoreApplication::translate("MainWindow", "Escoja un nivel de dificultad", nullptr));
+        name->setText(QCoreApplication::translate("MainWindow", "VOLA(N)DO", nullptr));
     } // retranslateUi
 
 };

@@ -155,6 +155,26 @@
      <string>Escoja un nivel de dificultad</string>
     </property>
    </widget>
+   <widget class="QLabel" name="name">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>430</y>
+      <width>641</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Rockwell Extra Bold</family>
+      <pointsize>72</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>VOLA(N)DO</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
