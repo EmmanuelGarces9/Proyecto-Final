@@ -1,0 +1,15 @@
+creditos:
+       capitulo de rick y morty, episodio 4 temporada 4:     https://pelisflix.golf/episodio/rick-and-morty-b-kcde-4x4/
+
+	los sprites utilizados fueron obtenidos de páginas de sprites para uso libre en internet.
+	
+	música del trailer:
+		https://www.youtube.com/watch?v=Ux3ehT7D3lI
+      		https://www.youtube.com/@streammusic-musicasincopyright
+
+     		https://www.youtube.com/watch?v=AFVn25madqw&list=PLC1A1UzNUvz0Aa1fkPXCwleqOaeVWhsjI&index=16
+    		https://www.youtube.com/@streammusic-musicasincopyright
+
+Consideraciones: se debe hacer click en la pantalla luego de haber escogido uno de los 2 nieves de dificultad, para poder empezar a moverse
+		 El nombre: "Vola(n)do hace referencia a 2 palabras, volado y volando, volado se refiere a que está drogado y volando se refiere
+			     a que su recorrido es volando por los cielos.
