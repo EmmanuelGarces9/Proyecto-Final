@@ -1,3 +1,8 @@
+Proyecto final Informática ll
+
+Hecho por Angie Paola Jaramillo Ortega y Emmanuel Garcés Agudelo
+
+
 Consideraciones: 
 		 Al seleccionar el nivel de dificultad en el juego, se debe hacer click en la pantalla para poder empezar a moverse.
 
