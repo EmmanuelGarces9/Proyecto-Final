@@ -1,3 +1,12 @@
+Consideraciones: Al seleccionar el nivel de dificultad en el juego, se debe hacer click en la pantalla para poder empezar a moverse.
+		 
+		 El nombre: "Vola(n)do hace referencia a 2 palabras, volado y volando, volado se refiere a que está drogado y volando se refiere
+			     a que su recorrido es volando por los cielos.
+		
+		 Se recomienda ver el video sobre la experiencia y estructura del proyecto en velocidad 0.75 o 0.5  
+
+
+
 creditos:
        capitulo de rick y morty, episodio 4 temporada 4:     https://pelisflix.golf/episodio/rick-and-morty-b-kcde-4x4/
 
@@ -9,7 +18,3 @@ creditos:
 
      		https://www.youtube.com/watch?v=AFVn25madqw&list=PLC1A1UzNUvz0Aa1fkPXCwleqOaeVWhsjI&index=16
     		https://www.youtube.com/@streammusic-musicasincopyright
-
-Consideraciones: se debe hacer click en la pantalla luego de haber escogido uno de los 2 nieves de dificultad, para poder empezar a moverse
-		 El nombre: "Vola(n)do hace referencia a 2 palabras, volado y volando, volado se refiere a que está drogado y volando se refiere
-			     a que su recorrido es volando por los cielos.
