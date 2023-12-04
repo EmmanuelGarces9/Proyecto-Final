@@ -1,8 +1,11 @@
-Consideraciones: Al seleccionar el nivel de dificultad en el juego, se debe hacer click en la pantalla para poder empezar a moverse.
+Consideraciones: 
+		 Al seleccionar el nivel de dificultad en el juego, se debe hacer click en la pantalla para poder empezar a moverse.
+
 		 
-		 El nombre: "Vola(n)do hace referencia a 2 palabras, volado y volando, volado se refiere a que está drogado y volando se refiere
-			     a que su recorrido es volando por los cielos.
+		 El nombre del juego: "Vola(n)do hace referencia a 2 palabras: volado y volando. Volado se refiere a que está drogado, fuera de la realidad.
+ 					Y volando se refiere a que su recorrido es volando por los cielos.
 		
+
 		 Se recomienda ver el video sobre la experiencia y estructura del proyecto en velocidad 0.75 o 0.5  
 
 
