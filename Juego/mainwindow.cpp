@@ -96,7 +96,7 @@ void MainWindow::on_EasyLevel_clicked()
     ui->EasyLevel->setGeometry(240, -150, 300, 150);
     ui->HardLevel->setGeometry(240, -150, 300, 150);
     delete juego;
-    juego=new game(15,21,14,20);
+    juego=new game(16,22,13,22);
     QString qtexto = "PUNTAJE: 0";
     ui->label->setText(qtexto);
     ui->label->setGeometry(45,-110, 500, 300);

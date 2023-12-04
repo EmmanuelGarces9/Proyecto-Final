@@ -6,7 +6,6 @@ debug/fireball.o
 debug/game.o
 debug/main.o
 debug/mainwindow.o
-debug/music.o
 debug/personaje.o
 debug/weed.o
 debug/qrc_Multimedia.o
@@ -15,6 +14,5 @@ debug/moc_edificio.o
 debug/moc_fireball.o
 debug/moc_game.o
 debug/moc_mainwindow.o
-debug/moc_music.o
 debug/moc_personaje.o
 debug/moc_weed.o
