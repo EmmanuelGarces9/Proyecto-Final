@@ -5,7 +5,7 @@ archivos::archivos()
     file_name="historial.txt";
 }
 
-void archivos::write_file(int points)
+void archivos::write_file(int points, bool EorH)
 {
     fstream archivo;
     try{
@@ -15,7 +15,9 @@ void archivos::write_file(int points)
         }
         auto now = std::chrono::system_clock::now();
         time_t end_time = std::chrono::system_clock::to_time_t(now);
-        archivo<<"\nEn la fecha:"<<ctime(&end_time)<<" usted jugó y su máximo puntaje fue: "<<points<<'\n';
+        archivo<<"\nEn la fecha:"<<ctime(&end_time)<<" usted jugó y su máximo puntaje fue: "<<points;
+        if(EorH) archivo<<", con dificultad: EASY\n";
+        else archivo<<", con dificultad: HARD\n";
         archivo.close();
         qDebug()<<"Se ha escrito el archivo";
     }

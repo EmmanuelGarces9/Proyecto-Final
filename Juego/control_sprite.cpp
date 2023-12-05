@@ -9,9 +9,6 @@ control_sprite::control_sprite()
     width_sprite = new int;
     height_sprite = new int;
 
-    //Set Default Values
-    *width_sprite = 16;
-    *height_sprite = 16;
 }
 
 control_sprite::~control_sprite()

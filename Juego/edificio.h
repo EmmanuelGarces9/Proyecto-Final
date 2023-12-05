@@ -25,7 +25,6 @@ public:
     void start_timer();
     bool getMov_on() const;
     void setMov_on(bool newMov_on);
-    int getX() const;
 
     void setSpeed(int newSpeed);
 

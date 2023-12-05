@@ -33,6 +33,7 @@ private:
     game* juego;
     int puntaje;
     archivos *files;
+    bool easy_or_hard; //easy=1, hard=0
 
 };
 #endif // MAINWINDOW_H

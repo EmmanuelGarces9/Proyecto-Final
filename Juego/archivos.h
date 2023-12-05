@@ -16,7 +16,7 @@ private:
 public:
 
     archivos();
-    void write_file(int points);
+    void write_file(int points, bool EorH);
     string read_file();
 
 };

@@ -1,4 +1,5 @@
 #include "game.h"
+
 game::game(int velBackground, int velBuilding ,int velFireball, int velWeed)
 {
     buildings=new Edificio;

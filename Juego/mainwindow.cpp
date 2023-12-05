@@ -53,7 +53,7 @@ void MainWindow::startgame()
 
 void MainWindow::gameover()
 {
-    files->write_file(puntaje);
+    files->write_file(puntaje, easy_or_hard);
     ui->game_over_text->setGeometry(440, 200, 200, 150);
     ui->pushButton->setGeometry(350-200, 547, 300, 50);
     ui->readbutton->setGeometry(350+200, 547, 300, 50);
@@ -92,6 +92,7 @@ void MainWindow::on_readbutton_clicked()
 
 void MainWindow::on_EasyLevel_clicked()
 {
+    easy_or_hard=1;
     ui->name->setGeometry(240, -150, 300, 150);
     ui->LevelOption->setGeometry(240, -150, 300, 150);
     ui->EasyLevel->setGeometry(240, -150, 300, 150);
@@ -106,6 +107,7 @@ void MainWindow::on_EasyLevel_clicked()
 
 void MainWindow::on_HardLevel_clicked()
 {
+    easy_or_hard=0;
     ui->name->setGeometry(240, -150, 300, 150);
     ui->LevelOption->setGeometry(240, -150, 300, 150);
     ui->EasyLevel->setGeometry(240, -150, 300, 150);
